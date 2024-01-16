@@ -1,0 +1,22 @@
+:root {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+button {
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    background-color: #8017f5;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #5c07bc;
+}
+
+button:active {
+    background-color: #5106a4;
+}
