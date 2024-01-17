@@ -1,47 +1,41 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" href="./favicon.png" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>Real Acts of Caring Game</title>
-		<link rel="stylesheet" type="text/css" href="./app.css" />
-		
-		<link rel="modulepreload" href="./_app/immutable/entry/start.WPov8Xjb.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/scheduler.k-kUyWhY.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.QKtGnVmO.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/app.Hb-IsagU.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/index.W6N13fT5.js">
-		<link rel="modulepreload" href="./_app/immutable/nodes/0.iDJpwHkb.js">
-		<link rel="modulepreload" href="./_app/immutable/nodes/2.5EzI9EN1.js">
-	</head>
-	<body data-sveltekit-preload-data="hover">
-		<div style="display: contents">  <h1 data-svelte-h="svelte-vzw3lo">RAC Game</h1> <p hidden>You see a random capybara</p> <button hidden>You pet the capybara</button> <button hidden>You leave</button> <button >Start Game</button> <button hidden>Restart Game</button> <p data-svelte-h="svelte-6q6kez">To learn more about RAC, click <a href="http://www.realactsofcaring.org/" target="_blank">here</a></p> 
-			
-			<script>
-				{
-					__sveltekit_13686vm = {
-						base: new URL(".", location).pathname.slice(0, -1),
-						env: null
-					};
+    <head>
+        <meta charset="utf-8" />
+        <title>RAC Game</title>
+        <style>
+            :root {
+                font-family: sans-serif;
+                text-align: center;
+            }
 
-					const element = document.currentScript.parentElement;
+            button {
+                border-radius: 10px;
+                margin: 10px;
+                padding: 10px;
+                border: none;
+                background-color: #8017f5;
+                color: white;
+                cursor: pointer;
+            }
 
-					const data = [null,null];
+            button:hover {
+                background-color: #5c07bc;
+            }
 
-					Promise.all([
-						import("./_app/immutable/entry/start.WPov8Xjb.js"),
-						import("./_app/immutable/entry/app.Hb-IsagU.js")
-					]).then(([kit, app]) => {
-						kit.start(app, element, {
-							node_ids: [0, 2],
-							data,
-							form: null,
-							error: null
-						});
-					});
-				}
-			</script>
-		</div>
-	</body>
+            button:active {
+                background-color: #5106a4;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>RAC Game</h1>
+        <p id="p" hidden></p>
+        <button id="yb" hidden></button>
+        <button id="nb" hidden></button>
+        <button id="start">Start Game</button>
+        <button id="restart" hidden>Restart Game</button>
+        <p>To learn more about RAC, click <a href="http://www.realactsofcaring.org/" target="_blank">here</a></p>
+        <script src="index.js"></script>
+    </body>
 </html>
