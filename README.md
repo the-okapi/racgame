@@ -1,2 +1,2 @@
 # RAC Game
-## RAC Game is a game about RAC
+RAC Game is a game about RAC
